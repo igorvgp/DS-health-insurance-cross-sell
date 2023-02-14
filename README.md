@@ -5,7 +5,7 @@
 
 # 1. Abstract
 
-<p align="justify">This **Data Science Project** was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list. </p>
+This Data Science Project was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list.
 
 <p align="justify">An Insurance company that has provided Health Insurance to its customers need to predict whether the policyholders (customers) from past year will also be interested in Car Insurance provided by the company.
 With the information about customers, the company did a survey asking them if they were interested in car insurance. With the results of this survey and the characteristics of the customers, the company is able to maximize profit through Machine Learning techniques can identify customers with a greater propensity to purchase a new insurance, since they company only have the resourses to call 20,000 customers.</p>
@@ -82,7 +82,7 @@ To direct your reading, below are links to the development carried out at each s
 
 Result: False
 
-![alt_text](media/responsesxvehicle-age.png)
+<img src="media/responsesxvehicle-age.png" width="800">
 
 Customers with older vehicles are more likely to buy car insurance.
  
@@ -90,7 +90,7 @@ Customers with older vehicles are more likely to buy car insurance.
 
 Result: True
 
-![alt_text](media/responsesxage.png) 
+<img src="media/responsesxage.png" width="800">
 
 Customers between 33 and 52 years represent 58% of the interested group.
 
@@ -98,7 +98,7 @@ Customers between 33 and 52 years represent 58% of the interested group.
 
 Result: True
 
-![alt_text](media/pr-insxdamage.png.png) 
+<img src="media/pr-insxdamage.png" width="800">
 
 Vehicles that was previously insured have low damage rate.
 
@@ -106,7 +106,7 @@ Vehicles that was previously insured have low damage rate.
 
 Result: True
 
-![alt_text](media/agexpr-ins.png.png.png) 
+<img src="media/agexpr-ins.png" width="800">
 
 Most of the new cars are already insured, thats why the hypotesis 1 (Customers with new cars are more interested in insurance) is false.
 
