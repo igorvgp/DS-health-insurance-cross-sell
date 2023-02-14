@@ -4,8 +4,25 @@
 ![alt_text](https://github.com/igorvgp/DS-health-insurance-cross-sell/blob/main/media/health-insurance.jpg) 
 
 # 1 - Abstract
-An Insurance company that has provided Health Insurance to its customers need to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company (Kaggle).
-With the information about customers, the company did a survey asking customers if they are interested in car insurance, with this information a model will be made to rank the customers most likely to buy.
+
+This **Data Science Project** was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list. 
+
+An Insurance company that has provided Car Insurance to its customers need to predict whether the policyholders (customers) from past year will also be interested in Health Insurance provided by the company.
+With the information about customers, the company did a survey asking them if they were interested in health insurance. With the results of this survey and the characteristics of the customers, the company is able to maximize profit through Machine Learning techniques can identify customers with a greater propensity to purchase a new insurance, since they company only have the resourses to call 20,000 customers.
+
+The solution was delivered through a "Get Prediction" button on Google Sheets that returns the purchase propensity of each customer on the list. Thus, sellers can target customers who have the highest chance of purchasing insurance.
+
+A demo of the solution can be seen in the gif below:
+
+
+<img src="media/sample_video.gif" width="800">
+
+Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about 3 times more efficient, generating an extra gain of 35 million dollars.
+
+# 2 - Methodology
+To develop this project, the CRISP-DM methodology was used, aiming at delivering the solution efficiently, and evolving at each cycle.
+
+
 
 ## 1.1 - Business Questions
 
@@ -29,7 +46,7 @@ With the information about customers, the company did a survey asking customers 
 	
 # 3 - Solution Strategy
 
-Methodology: CRISP-DS
+Methodology: CRISP-DM
 
 1. Data Description: data dimensions, types, NaN verification, descriptive statistics, numerical attributes and categorical attributes
 2. Feature Engineering: Mind Map of Hypotheses and feature derivation
