@@ -1,40 +1,69 @@
 # Health Insurance Cross-Selling
-### Using Machine Learning to rank a list of customers most likely to purchase a Health Insurance for a cross-sell campaign.
+### Using Machine Learning to rank a list of customers most likely to buy a Car Insurance for a cross-sell campaign.
 
 ![alt_text](https://github.com/igorvgp/DS-health-insurance-cross-sell/blob/main/media/health-insurance.jpg) 
 
-# 1 - Abstract
+# 1. Abstract
 
-This **Data Science Project** was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list. 
+<p align="justify">This **Data Science Project** was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list. </p>
 
-An Insurance company that has provided Car Insurance to its customers need to predict whether the policyholders (customers) from past year will also be interested in Health Insurance provided by the company.
-With the information about customers, the company did a survey asking them if they were interested in health insurance. With the results of this survey and the characteristics of the customers, the company is able to maximize profit through Machine Learning techniques can identify customers with a greater propensity to purchase a new insurance, since they company only have the resourses to call 20,000 customers.
+<p align="justify">An Insurance company that has provided Health Insurance to its customers need to predict whether the policyholders (customers) from past year will also be interested in Car Insurance provided by the company.
+With the information about customers, the company did a survey asking them if they were interested in car insurance. With the results of this survey and the characteristics of the customers, the company is able to maximize profit through Machine Learning techniques can identify customers with a greater propensity to purchase a new insurance, since they company only have the resourses to call 20,000 customers.</p>
 
-The solution was delivered through a "Get Prediction" button on Google Sheets that returns the purchase propensity of each customer on the list. Thus, sellers can target customers who have the highest chance of purchasing insurance.
+<p align="justify">The solution was delivered through a "Get Prediction" button on Google Sheets that returns the purchase propensity of each customer on the list. Thus, sellers can target customers who have the highest chance of purchasing insurance.</p>
 
 A demo of the solution can be seen in the gif below:
 
 
 <img src="media/sample_video.gif" width="800">
 
-Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about 3 times more efficient, generating an extra gain of 35 million dollars.
+<p align="justify">Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about 3 times more efficient, generating an extra gain of 35 million dollars.</p>
 
-# 2 - Methodology
-To develop this project, the CRISP-DM methodology was used, aiming at delivering the solution efficiently, and evolving at each cycle.
+# 2. Methodology
+
+<p align="justify">To develop this project, the CRISP-DM methodology was used, aiming at delivering the solution efficiently, and evolving at each cycle.</p>
+
+<img src="media/CRISP-DM.png" width="800">
+
+To direct your reading, below are links to the development carried out at each stage of the CRISP cycle:
+
+* [Business Understanding](https://github.com/vitorhmf/cross-sell#3-business-understanding)
+* [Data Understanding](https://github.com/vitorhmf/cross-sell#4-data-understanding)
+* [Data Preparation](https://github.com/vitorhmf/cross-sell#5-data-preparation)
+* [Machine Learning Modeling](https://github.com/vitorhmf/cross-sell#6-machine-learning-modeling)
+* [Evaluation](https://github.com/vitorhmf/cross-sell#7-evaluation)
+* [Depoyment](https://github.com/vitorhmf/cross-sell#8-deployment)
+
+# 3. Business Undestanding
+
+## 3.1. Context
+
+<p align="justify">The CEO of a Health Insurance company wants to expand the business by offering Car Insurance. The company carried out a customer survey in which they had to answer whether they would buy car insurance from the company. 381109 customers answered the survey and the results were saved in the database along with other customer attributes.</p>
+
+<p align="justify">Now, the company is ready to launch the new service, and the sales team have a list of 127,000 customers to make phone calls and offer the new Insurance. Considering that the sales team has the capacity to make 20,000 calls within the campaign period, the goal is to build a solution that ranks the customers most likely to buy the new service.</p>
+
+<p align="justify">The features of the database are described below:</p>
+
+| Feature                | Definition                                                                                               |
+|------------------------|----------------------------------------------------------------------------------------------------------|
+| id                     | Unique ID for the customer                                                                               |
+| gender                 | Gender of the customer                                                                                   |
+| age                    | Age of the customer                                                                                      |
+| driving_license        | 0 : Customer does not have DL, 1 : Customer already has DL                                               |
+| region_code            | Unique code for the region of the customer                                                               |
+| previously_insured     | 1 : Customer already has Vehicle Insurance, 0 : Customer doesn't have Vehicle Insurance                  |
+| vehicle_age            | Age of the Vehicle                                                                                       |
+| vehicle_damage         | 1 : Customer got his/her vehicle damaged in the past. 0 : Customer didn't get his/her vehicle damaged in the past. |
+| anual_pemium           | The amount customer needs to pay as premium in the year                                                  |
+| policysaleschannel     | Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc. |
+| vintage                | Number of Days, Customer has been associated with the company                                            |
+| response               | 1 : Customer is interested, 0 : Customer is not interested                                               |
 
 
+*Source:* [Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction)
 
-## 1.1 - Business Questions
 
-	1. Main Insights on the most relevant attributes of customers interested in purchasing auto insurance.
-
-	2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
-
-	3. If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
-
-	4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
-
-# 2 - Business Assumptions
+## 3.2. Business Assumptions
 
 	1. Customers who already have Health Insurance may also be interested in Auto Insurance.
 	
@@ -44,43 +73,42 @@ To develop this project, the CRISP-DM methodology was used, aiming at delivering
 	
 	4. A machine learning model to rank customers most likely to buy will increase sales force productivity and accelerate new market entry.
 	
-# 3 - Solution Strategy
 
-Methodology: CRISP-DM
+# 4. Data Understanding
 
-1. Data Description: data dimensions, types, NaN verification, descriptive statistics, numerical attributes and categorical attributes
-2. Feature Engineering: Mind Map of Hypotheses and feature derivation
-3. Exploratory Data Analysis: Univariate, bivariate and multivariate analysis
-4. Data Preparation: Data division into training and testing, coding, standardization and rescaling.
-5. Feature Selection: Feature importance
-6. Machine Learning: KNN, Logistic Regression and Extra Tree
-7. Model performance: recall and accuracy top k 
-8. Business performance: Business questions
-9. Deployment: API in Heroku and access to ranking via Google Sheets
-
-# 4 - Top 3 Data Insights
+## 4.1. Main Insights
 
 ### Hypothesis 1: Customers with new cars are more interested in insurance
 
-Result: True
-
-![alt_text](cross_sell/reports/figures/car_age.png)
-
-This information can drive the sales team and impact the Machine Learning model.
- 
-### Hypothesis 4. Older people are more interested in auto insurance
-
-Result: True
-
-![alt_text](cross_sell/reports/figures/age.png) 
-
-Clients between 33 and 52 years represent 58% of the interested group
-
-### Hypothesis 2. Damaged cars are more insured
-
 Result: False
 
-Of the group of customers who already have insurance, only 6% had any damage to their car, indicating a low-risk market.
+![alt_text](media/responsesxvehicle-age.png)
+
+Customers with older vehicles are more likely to buy car insurance.
+ 
+### Hypothesis 2. Older people are more interested in auto insurance
+
+Result: True
+
+![alt_text](media/responsesxage.png) 
+
+Customers between 33 and 52 years represent 58% of the interested group.
+
+### Hypothesis 3. Vehicles that are already insured have lower damage rate
+
+Result: True
+
+![alt_text](media/pr-insxdamage.png.png) 
+
+Vehicles that was previously insured have low damage rate.
+
+### Hypothesis 4. customers with new cars are more likely to have car insurance
+
+Result: True
+
+![alt_text](media/agexpr-ins.png.png.png) 
+
+Most of the new cars are already insured, thats why the hypotesis 1 (Customers with new cars are more interested in insurance) is false.
 
 # 5 - Machine Learning Model
 
