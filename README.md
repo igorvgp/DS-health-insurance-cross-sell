@@ -116,13 +116,13 @@ Most of the new cars are already insured, thats why the hypotesis 1 (Customers w
 
 <p align="justify">There are many preprocessing technique such as standardization, rescaling and encoding. For the features of the dataset of this problem, the following techniques were applied:</p>
 
-    - Annual Preminum: [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
-    - Age: [Min Max Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
-    - Vintage: [Min Max Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
-    - Gender: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
-    - Vehicle Damage: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
-    - Region Code: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
-    - Policy Sales Channel: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
+- Annual Preminum: [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+- Age: [Min Max Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+- Vintage: [Min Max Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+- Gender: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
+- Vehicle Damage: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
+- Region Code: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
+- Policy Sales Channel: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
 
 ## 6. Machine Learning Modeling
 
