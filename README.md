@@ -29,10 +29,10 @@ To direct your reading, below are links to the development carried out at each s
 
 * [Business Understanding](#3-business-undestanding)
 * [Data Understanding](#4-data-understanding)
-* [Data Preparation](https://github.com/vitorhmf/cross-sell#5-data-preparation)
-* [Machine Learning Modeling](https://github.com/vitorhmf/cross-sell#6-machine-learning-modeling)
-* [Evaluation](https://github.com/vitorhmf/cross-sell#7-evaluation)
-* [Depoyment](https://github.com/vitorhmf/cross-sell#8-deployment)
+* [Data Preparation](#5-data-preparation)
+* [Machine Learning Modeling](#6-machine-learning-modeling)
+* [Evaluation](#7-model-performance)
+* [Deployment](#8-deploy)
 
 ## 3. Business Undestanding
 
@@ -110,7 +110,9 @@ Result: True
 
 Most of the new cars are already insured, thats why the hypotesis 1 (Customers with new cars are more interested in insurance) is false.
 
-# 5 - Machine Learning Model
+## 5. Data Preparation
+
+## 6. Machine Learning Modeling
 
 ![alt_text](cross_sell/reports/figures/gain_curve.png) 
 
@@ -120,7 +122,7 @@ X-Axis: Number of customers
 
 Y-Axis: Algorithm's ability to sort by customers likely to buy
 
-# 6 - Machine Learning Performance
+## 7. Model Performance
 
 Ranking Position: 2000 
 
@@ -128,39 +130,39 @@ Recall: 0.08
 
 Precison: 0.32
 
-# 7 - Business Result
+### 7.1. Business Result
 
-### 1. Main Insights on the most relevant attributes of customers interested in purchasing auto insurance.
+#### 1. Main Insights on the most relevant attributes of customers interested in purchasing auto insurance.
 
 - Customers with new cars are more likely to take out insurance.
 - 58% of the positive response are between 33 and 52 years old
 - 76% of customers who had damaged cars responded positively.
 - Men represent the most positive responses.
 
-### 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
+#### 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
 
 - With 20.000 calls sales team will be contact 61% of customers interested
 
-### 3. If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
+#### 3. If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
 
 - With 40.000 calls sales team will be contact 99% of customers interested
 
-### 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
+#### 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
 
 - With 27.500 calls sales team will be contact 80% of customers interested
 
-# 8 - Deploy
+## 8. Deploy
 
 
 ![alt_text](cross_sell/reports/figures/sheets.gif) 
 
 The API with the ranking model is available to the company and can be accessed by Google Sheets, the sales team can provide the customer information to get the ranking score.
 
-# 9 - Lessons Learned
+## 9. Lessons Learned
 
 The problem of learning to rank requires other metrics to assess the performance of the algorithm, these metrics are adapted from classification models.
 
-# 10 - Next Steps to Improve
+## 10. Next Steps to Improve
 
 In this solution, classes were not balanced in model training. Another tool is the application of hyperparameters to improve algorithm performance and cross-validation to ensure that the algorithm evaluation is not biased.
 
