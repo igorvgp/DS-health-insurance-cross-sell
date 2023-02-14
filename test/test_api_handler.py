@@ -18,7 +18,7 @@ def predict(data):
     url =  'https://healthinsurance-webapp-api.onrender.com/healthinsurance/predict'  
 
     # Local URL
-    #url = 'http://127.0.0.1:5000/healthinsurance/predict' 
+    #url = 'http://10.0.0.175:5000/healthinsurance/
 
     header = {'Content-type': 'application/json' }
     data = data
