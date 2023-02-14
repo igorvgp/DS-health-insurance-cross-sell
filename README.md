@@ -31,8 +31,8 @@ To direct your reading, below are links to the development carried out at each s
 * [Data Understanding](#4-data-understanding)
 * [Data Preparation](#5-data-preparation)
 * [Machine Learning Modeling](#6-machine-learning-modeling)
-* [Evaluation](#7-model-performance)
-* [Deployment](#8-deploy)
+* [Model Performance](#7-model-performance)
+* [Deploy](#8-deploy)
 
 ## 3. Business Undestanding
 
@@ -112,6 +112,18 @@ Most of the new cars are already insured, thats why the hypotesis 1 (Customers w
 
 ## 5. Data Preparation
 
+<p align="justify">Most ML algorithms are prepared to work on data with certain patterns. Continuous variables should be as close to the normal distribution as possible, and categorical variables represented by text should be replaced with numbers.</p>
+
+<p align="justify">There are many preprocessing technique such as standardization, rescaling and encoding. For the features of the dataset of this problem, the following techniques were applied:</p>
+
+    1. Annual Preminum: [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+    2. Age: [Min Max Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+    3. Vintage: [Min Max Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+    4. Gender: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
+    5. Vehicle Damage: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
+    6. Region Code: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
+    7. Policy Sales Channel: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
+
 ## 6. Machine Learning Modeling
 
 ![alt_text](cross_sell/reports/figures/gain_curve.png) 
@@ -152,7 +164,6 @@ Precison: 0.32
 - With 27.500 calls sales team will be contact 80% of customers interested
 
 ## 8. Deploy
-
 
 ![alt_text](cross_sell/reports/figures/sheets.gif) 
 
