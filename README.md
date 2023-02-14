@@ -27,8 +27,8 @@ A demo of the solution can be seen in the gif below:
 
 To direct your reading, below are links to the development carried out at each stage of the CRISP cycle:
 
-* [Business Understanding](https://github.com/vitorhmf/cross-sell#3-business-understanding)
-* [Data Understanding](https://github.com/vitorhmf/cross-sell#4-data-understanding)
+* [Business Understanding](https://https://github.com/igorvgp/DS-health-insurance-cross-sell## 3. Business Undestanding)
+* [Data Understanding](https://https://github.com/igorvgp/DS-health-insurance-cross-sell## 4. Data Understanding)
 * [Data Preparation](https://github.com/vitorhmf/cross-sell#5-data-preparation)
 * [Machine Learning Modeling](https://github.com/vitorhmf/cross-sell#6-machine-learning-modeling)
 * [Evaluation](https://github.com/vitorhmf/cross-sell#7-evaluation)
