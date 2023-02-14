@@ -136,13 +136,13 @@ For this business problem, five classification models were tested using 10-fold 
 The results obtained are shown below:
 
 
-| Model Name           | Precision Top-K CV| Recall Top-K CV|      F1 Score CV|       AUC Score CV|  
-|......................|...................|................|.................|...................|
-| XGBoost              |    0.43 +/- 0.0102| 0.06 +/- 0.0014|  0.43 +/- 0.0019|    0.85 +/- 0.0009|
-| Random Forest        |    0.39 +/- 0.0138| 0.06 +/- 0.0017|  0.42 +/- 0.0024|    0.85 +/- 0.0013|
-| K-Nearest Neighbors  |    0.24 +/- 0.0071|  0.03 +/- 0.001|  0.12 +/- 0.0028|     0.6 +/- 0.0024|
-| Logistic Regression  |     0.12 +/- 0.024| 0.02 +/- 0.0034|  0.35 +/- 0.0733|    0.72 +/- 0.0947|
-|
+| Model Name           | Precision Top-K CV | Recall Top-K CV |      F1 Score CV |       AUC Score CV |  
+|......................|....................|.................|..................|....................|
+| XGBoost              |    0.43 +/- 0.0102 | 0.06 +/- 0.0014 |  0.43 +/- 0.0019 |    0.85 +/- 0.0009 |
+| Random Forest        |    0.39 +/- 0.0138 | 0.06 +/- 0.0017 |  0.42 +/- 0.0024 |    0.85 +/- 0.0013 |
+| K-Nearest Neighbors  |    0.24 +/- 0.0071 |  0.03 +/- 0.001 |  0.12 +/- 0.0028 |     0.6 +/- 0.0024 |
+| Logistic Regression  |      0.12 +/- 0.024| 0.02 +/- 0.0034 |  0.35 +/- 0.0733 |    0.72 +/- 0.0947 |
+
 
 ## 7. Model Performance
 
