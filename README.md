@@ -1,5 +1,5 @@
 # Health Insurance Cross-Selling
-## Using Machine Learning to rank a list of customers most likely to purchase a Health Insurance for a cross-sell campaign.
+### Using Machine Learning to rank a list of customers most likely to purchase a Health Insurance for a cross-sell campaign.
 
 ![alt_text](https://github.com/igorvgp/DS-health-insurance-cross-sell/blob/main/media/health-insurance.jpg) 
 
