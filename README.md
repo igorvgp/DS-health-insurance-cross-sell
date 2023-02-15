@@ -151,7 +151,7 @@ The XGBoost Model was chosen because it presented the best results followed by t
 
 After tuning the model, it presented the following results:
 
-For ranking Position =  2000:
+For ranking position =  2000:
 
     Recall: 0.06 
 
@@ -165,9 +165,9 @@ The optimum point is about 30% of the candidates, so we can reach 80% of the cus
 
 <img src="media/lift-curve.png" width="600">
 
-The lift curve shows how good the model is compared to a random one, according to the number of customers contacted. Ex: Lift = 2 means that the model is two times better than a random one.
+<p align="justify">The lift curve shows how good the model is compared to a random one, according to the number of customers contacted. Ex: Lift = 2 means that the model is two times better than a random one.</p>
 
-According to the lift curve, if we call about 30% of the available customers, the model will give results 2.7 times better than calling randomly.
+<p align="justify">According to the lift curve, if we call about 30% of the available customers, the model will give results 2.7 times better than calling randomly.</p>
 
 ### 7.2. Business Results
 
@@ -180,21 +180,30 @@ According to the lift curve, if we call about 30% of the available customers, th
 
 ##### 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
 
-- With 20,000 calls sales team will contact 52% of the interested customers.
+With 20,000 calls sales team will contact 52% of the interested customers.
 
 ##### 3. If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
 
-- With 40,000 calls sales team will call 88% of the interested customers.
+With 40,000 calls sales team will call 88% of the interested customers.
 
 ##### 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
 
-- With 35,000 calls sales team will call 80% of the interested customers.
+With 35,000 calls sales team will call 80% of the interested customers.
 
 ## 8. Deploy
 
 ![alt_text](cross_sell/reports/figures/sheets.gif) 
 
-The API with the ranking model is available to the company and can be accessed by Google Sheets, the sales team can provide the customer information to get the ranking score.
+The API with the ranking model is available to the company and can be accessed by Google Sheets, so the sales team can provide the customer information to get the ranking score.
+
+A demo of the solution can be seen in the gif below:
+
+<img src="media/sample_video.gif" width="800">
+
+To build this solution, the architecture below was used:
+
+<img src="media/deploy_diagram.gif" width="800">
+
 
 ## 9. Lessons Learned
 
