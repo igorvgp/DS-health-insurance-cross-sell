@@ -221,12 +221,12 @@ To build this solution, the architecture below was used:
 
 The problem of Learning to Rank requires other metrics to assess the performance of the algorithm, these metrics are adapted from classification models.
 
-[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
+
 
 ## 10. Next Steps to Improve
 
 - Test other ML algorithms (Naive Bayes, LightGBM)
 - Develop a dashboard to track model performance
 
-[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
+[Back to the top](#1-abstract) 
 
