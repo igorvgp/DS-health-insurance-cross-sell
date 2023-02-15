@@ -151,19 +151,19 @@ The XGBoost Model was chosen because it presented the best results followed by t
 
 After tuning the model, it presented the following results:
 
-Ranking Position: 2000 
+For ranking Position =  2000:
 
     Recall: 0.06 
 
     Precison: 0.43
 
-<img src="gain-curve.png" width="600">
+<img src="media/gain-curve.png" width="600">
 
 <p align="justify">The cumulative gain curve the relationship between the number of customers contacted on the list ordered by the algorithm and the success rate. The closer the cumulative gains line is to the top-left corner of the chart, the greater the gain, the higher the proportion of the responders that are reached for the lower proportion of customers contacted.</p>
 
 The optimum point is about 30% of the candidates, so we can reach 80% of the customers interested in insurance.
 
-<img src="lift-curve.png" width="600">
+<img src="media/lift-curve.png" width="600">
 
 The lift curve shows how good the model is compared to a random one, according to the number of customers contacted. Ex: Lift = 2 means that the model is two times better than a random one.
 
@@ -171,7 +171,7 @@ According to the lift curve, if we call about 30% of the available customers, th
 
 ### 7.2. Business Results
 
-<img src="results.png" width="600">
+<img src="media/results.png" width="600">
 
 <p align="justify">According to the information above, if the company call randomly 20,000 customers, the income will be around $ 13M</p>
 <p align="justify">On the other hand, if the company call the 20,000 customers with higher probability of getting a Car Insurance defined by the model, the income will be around $ 43M.</p>
