@@ -141,37 +141,62 @@ The results obtained are shown below:
 | XGBoost              |    0.43 +/- 0.0102 | 0.06 +/- 0.0014 |  0.43 +/- 0.0019 |    0.85 +/- 0.0009 |
 | Random Forest        |    0.39 +/- 0.0138 | 0.06 +/- 0.0017 |  0.42 +/- 0.0024 |    0.85 +/- 0.0013 |
 | K-Nearest Neighbors  |    0.24 +/- 0.0071 |  0.03 +/- 0.001 |  0.12 +/- 0.0028 |     0.6 +/- 0.0024 |
-| Logistic Regression  |      0.12 +/- 0.024| 0.02 +/- 0.0034 |  0.35 +/- 0.0733 |    0.72 +/- 0.0947 |
+| Logistic Regression  |     0.12 +/- 0.024 | 0.02 +/- 0.0034 |  0.35 +/- 0.0733 |    0.72 +/- 0.0947 |
 
+The XGBoost Model was chosen because it presented the best results followed by the Random Forest model. As the training time of XGBoost model is two times faster than Random Forest, this model was the best option.
 
 ## 7. Model Performance
 
+### 7.1. General Performance
+
+After tuning the model, it presented the following results:
+
 Ranking Position: 2000 
 
-Recall: 0.08 
+    Recall: 0.06 
 
-Precison: 0.32
+    Precison: 0.43
 
-### 7.1. Business Result
+<img src="gain-curve.png" width="600">
 
-#### 1. Main Insights on the most relevant attributes of customers interested in purchasing auto insurance.
+<p align="justify">The cumulative gain curve the relationship between the number of customers contacted on the list ordered by the algorithm and the success rate. The closer the cumulative gains line is to the top-left corner of the chart, the greater the gain, the higher the proportion of the responders that are reached for the lower proportion of customers contacted.</p>
 
-- Customers with new cars are more likely to take out insurance.
-- 58% of the positive response are between 33 and 52 years old
-- 76% of customers who had damaged cars responded positively.
-- Men represent the most positive responses.
+The optimum point is about 30% of the candidates, so we can reach 80% of the customers interested in insurance.
 
-#### 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
+<img src="lift-curve.png" width="600">
 
-- With 20.000 calls sales team will be contact 61% of customers interested
+The lift curve shows how good the model is compared to a random one, according to the number of customers contacted. Ex: Lift = 2 means that the model is two times better than a random one.
 
-#### 3. If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
+According to the lift curve, if we call about 30% of the available customers, the model will give results 2.7 times better than calling randomly.
 
-- With 40.000 calls sales team will be contact 99% of customers interested
+### 7.2. Business Results
 
-#### 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
+percentage customers  |  No. Customers  | Investment ($) | Random Calls Income ($) | Random Model Recall  | ML Model Income($) | ML Model Recall | ML Model Income ($) |
+----------------------|-----------------|----------------|-------------------------|----------------------|--------------------|-----------------|---------------------|
+                0.05  |         6350.0  |       127.0 K  |               $ 4.12M   |               0.05   |             14.29  |           0.19  |          $ 14.29M   |
+                0.10  |        12700.0  |       254.0 K  |               $ 8.25M   |               0.10   |             26.25  |           0.36  |          $ 26.25M   |
+                0.20  |        25400.0  |       508.0 K  |               $ 16.5M   |               0.20   |             46.91  |           0.64  |          $ 46.91M   |
+                0.30  |        38100.0  |       762.0 K  |              $ 24.74M   |               0.30   |             62.55  |           0.85  |          $ 62.55M   | 
+                0.40  |        50800.0  |      1016.0 K  |              $ 32.99M   |               0.40   |             71.07  |           0.97  |          $ 71.07M   | 
+                0.50  |        63500.0  |      1270.0 K  |              $ 41.24M   |               0.50   |             73.45  |           1.00  |          $ 73.45M   | 
 
-- With 27.500 calls sales team will be contact 80% of customers interested
+
+<p align="justify">According to the information above, if the company call randomly 20,000 customers, the income will be around $ 13M</p>
+<p align="justify">On the other hand, if the company call the 20,000 customers with higher probability of getting a Car Insurance defined by the model, the income will be around $ 43M.</p>
+
+### 7.3. Business Questions
+
+##### 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
+
+- With 20,000 calls sales team will contact 52% of the interested customers.
+
+##### 3. If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
+
+- With 40,000 calls sales team will call 88% of the interested customers.
+
+##### 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
+
+- With 35,000 calls sales team will call 80% of the interested customers.
 
 ## 8. Deploy
 
