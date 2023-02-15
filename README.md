@@ -33,6 +33,8 @@ To direct your reading, below are links to the development carried out at each s
 * [Machine Learning Modeling](#6-machine-learning-modeling)
 * [Model Performance](#7-model-performance)
 * [Deploy](#8-deploy)
+* [Lessons Learned](#9-lessons-learned)
+* [Next Steps to Improve](#10-next-steps-to-improve)
 
 ## 3. Business Undestanding
 
@@ -209,6 +211,7 @@ The problem of learning to rank requires other metrics to assess the performance
 
 ## 10. Next Steps to Improve
 
-In this solution, classes were not balanced in model training. Another tool is the application of hyperparameters to improve algorithm performance and cross-validation to ensure that the algorithm evaluation is not biased.
+- Test other ML algorithms (Naive Bayes, LightGBM)
+- Develop a dashboard to track model performance
 
 
