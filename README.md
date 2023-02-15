@@ -171,7 +171,7 @@ The optimum point is about 30% of the candidates, so we can reach 80% of the cus
 
 ### 7.2. Business Results
 
-<img src="media/results.png" width="600">
+<img src="media/results.png" width="800">
 
 <p align="justify">According to the information above, if the company call randomly 20,000 customers, the income will be around $ 13M</p>
 <p align="justify">On the other hand, if the company call the 20,000 customers with higher probability of getting a Car Insurance defined by the model, the income will be around $ 43M.</p>
@@ -202,7 +202,7 @@ A demo of the solution can be seen in the gif below:
 
 To build this solution, the architecture below was used:
 
-<img src="media/deploy_diagram.gif" width="800">
+<img src="media/deploy_diagram.png" width="800">
 
 
 ## 9. Lessons Learned
