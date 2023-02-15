@@ -19,6 +19,8 @@ A demo of the solution can be seen in the gif below:
 
 <p align="justify">Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about 3 times more efficient, generating an extra gain of 35 million dollars.</p>
 
+The full solution can be seen on this [Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
+
 ## 2. Methodology
 
 <p align="justify">To develop this project, the CRISP-DM methodology was used, aiming at delivering the solution efficiently, and evolving at each cycle.</p>
@@ -75,6 +77,7 @@ To direct your reading, below are links to the development carried out at each s
 	
 - A machine learning model to rank customers most likely to buy will increase sales force productivity and accelerate new market entry.
 	
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
 ## 4. Data Understanding
 
@@ -112,6 +115,8 @@ Result: True
 
 Most of the new cars are already insured, thats why the hypotesis 1 (Customers with new cars are more interested in insurance) is false.
 
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
+
 ## 5. Data Preparation
 
 <p align="justify">Most ML algorithms are prepared to work on data with certain patterns. Continuous variables should be as close to the normal distribution as possible, and categorical variables represented by text should be replaced with numbers.</p>
@@ -125,6 +130,8 @@ Most of the new cars are already insured, thats why the hypotesis 1 (Customers w
 - Vehicle Damage: [Label Encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/)
 - Region Code: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
 - Policy Sales Channel: [Frequency Encoding](https://datascience.stackexchange.com/questions/63749/why-does-frequency-encoding-work#:~:text=Frequency%20encoding%20is%20a%20widely,categorical%20features%20with%20high%20cardinality.)
+
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
 ## 6. Machine Learning Modeling
 
@@ -146,6 +153,8 @@ The results obtained are shown below:
 | Logistic Regression  |     0.12 +/- 0.024 | 0.02 +/- 0.0034 |  0.35 +/- 0.0733 |    0.72 +/- 0.0947 |
 
 The XGBoost Model was chosen because it presented the best results followed by the Random Forest model. As the training time of XGBoost model is two times faster than Random Forest, this model was the best option.
+
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
 ## 7. Model Performance
 
@@ -192,6 +201,8 @@ With 40,000 calls sales team will call 88% of the interested customers.
 
 With 35,000 calls sales team will call 80% of the interested customers.
 
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
+
 ## 8. Deploy
 
 The API with the ranking model is available to the company and can be accessed by Google Sheets, so the sales team can provide the customer information to get the ranking score.
@@ -204,14 +215,18 @@ To build this solution, the architecture below was used:
 
 <img src="media/deploy_diagram.png" width="600">
 
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
 ## 9. Lessons Learned
 
-The problem of learning to rank requires other metrics to assess the performance of the algorithm, these metrics are adapted from classification models.
+The problem of Learning to Rank requires other metrics to assess the performance of the algorithm, these metrics are adapted from classification models.
+
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
 ## 10. Next Steps to Improve
 
 - Test other ML algorithms (Naive Bayes, LightGBM)
 - Develop a dashboard to track model performance
 
+[Back to the top](#1-abstract) | [View Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
