@@ -65,13 +65,13 @@ To direct your reading, below are links to the development carried out at each s
 
 ### 3.2. Business Assumptions
 
-	1. Customers who already have Health Insurance may also be interested in Auto Insurance.
+- Customers who already have Health Insurance may also be interested in Auto Insurance.
 	
-	2. Cross-selling increases customer loyalty.
+- Cross-selling increases customer loyalty.
 	
-	3. Learning from cross-selling can become a horizontal strategy for the company in the market.
+- Learning from cross-selling can become a horizontal strategy for the company in the market.
 	
-	4. A machine learning model to rank customers most likely to buy will increase sales force productivity and accelerate new market entry.
+- A machine learning model to rank customers most likely to buy will increase sales force productivity and accelerate new market entry.
 	
 
 ## 4. Data Understanding
@@ -192,8 +192,6 @@ With 35,000 calls sales team will call 80% of the interested customers.
 
 ## 8. Deploy
 
-![alt_text](cross_sell/reports/figures/sheets.gif) 
-
 The API with the ranking model is available to the company and can be accessed by Google Sheets, so the sales team can provide the customer information to get the ranking score.
 
 A demo of the solution can be seen in the gif below:
@@ -202,7 +200,7 @@ A demo of the solution can be seen in the gif below:
 
 To build this solution, the architecture below was used:
 
-<img src="media/deploy_diagram.png" width="800">
+<img src="media/deploy_diagram.png" width="600">
 
 
 ## 9. Lessons Learned
