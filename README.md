@@ -1,8 +1,8 @@
 # Health Insurance Cross-Selling
-### Using Machine Learning to rank a list of customers most likely to buy a Car Insurance for a cross-sell campaign.
+*Using Machine Learning to rank a list of customers most likely to buy a Car Insurance for a cross-sell campaign*
 
 ![alt_text](https://github.com/igorvgp/DS-health-insurance-cross-sell/blob/main/media/health-insurance.jpg) 
-
+*The in-depth Python code explanation is available in [this](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html) Jupyter Notebook.*
 ## 1. Abstract
 
 This Data Science Project was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list.
@@ -17,7 +17,7 @@ A demo of the solution can be seen in the gif below:
 
 <img src="media/sample_video.gif" width="800">
 
-<p align="justify">Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about 3 times more efficient, generating an extra gain of 35 million dollars.</p>
+<p align="justify">Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about **3 times** more efficient, generating an extra gain of **35 million dollars**.</p>
 
 The full solution can be seen on this [Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
