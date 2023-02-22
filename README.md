@@ -17,7 +17,7 @@ A demo of the solution can be seen in the gif below:
 
 <img src="media/sample_video.gif" width="800">
 
-<p align="justify">Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about **3 times** more efficient, generating an extra gain of **35 million dollars**.</p>
+Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about **3 times** more efficient, generating an extra gain of **35 million dollars**.
 
 The full solution can be seen on this [Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
