@@ -5,7 +5,7 @@
 *The in-depth Python code explanation is available in [this](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html) Jupyter Notebook.*
 ## 1. Abstract
 
-<p style="text-align: justify;">This Data Science Project was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list.</p>
+This Data Science Project was inspired by this [kaggle Challenge](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction) and presents the development of a Classification Machine Learning Model, more specifically a Learning to Rank Model, used to generate a propensity score to purchase a new product for a company's customer list.
 
 <p align="justify">An Insurance company that has provided Health Insurance to its customers need to predict whether the policyholders (customers) from past year will also be interested in Car Insurance provided by the company.
 With the information about customers, the company did a survey asking them if they were interested in car insurance. With the results of this survey and the characteristics of the customers, the company is able to maximize profit through Machine Learning techniques and identify customers with a greater propensity to purchase a new insurance, since they company only have the resourses to call 20,000 customers.</p>
@@ -17,7 +17,7 @@ A demo of the solution can be seen in the gif below:
 
 <img src="media/sample_video.gif" width="800">
 
-Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about **3 times** more efficient, generating an extra gain of **35 million dollars**.
+<p style="text-align: justify;">Compared to a random selection of customers to be contacted, the machine learning model developed proved to be about <strong>3 times</strong> more efficient, generating an extra gain of <strong>35 million dollars</strong>.</p>
 
 The full solution can be seen on this [Notebook](https://nbviewer.org/github/igorvgp/DS-health-insurance-cross-sell/blob/a9b98fa99501fc392dcd7942fc1c18b3c4999f20/Notebooks/health-insurance-cross-sell.html)
 
